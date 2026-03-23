@@ -28,7 +28,7 @@ export default function App() {
     setText(inputText);
 
     try {
-      const res = await fetch("http://localhost:5000/tokenize", {
+      const res = await fetch("https://token-lab-zj0j.onrender.com/tokenize", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: inputText }),
