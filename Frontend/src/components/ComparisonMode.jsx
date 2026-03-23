@@ -16,12 +16,12 @@ export default function ComparisonMode() {
 
     try {
       const [resA, resB] = await Promise.all([
-        fetch("http://localhost:5000/tokenize", {
+        fetch("https://token-lab-zj0j.onrender.com/tokenize", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text: textA }),
         }),
-        fetch("http://localhost:5000/tokenize", {
+        fetch("https://token-lab-zj0j.onrender.com/tokenize", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text: textB }),
